@@ -16,6 +16,8 @@
 - **特征点叠加** — MediaPipe 478 个面部特征点绘制在摄像头预览上。
 - **模型导入** — 运行时切换 `.vrm` 模型。
 
+**在线演示**：[coast23.github.io/CG-BlendShape](https://coast23.github.io/CG-BlendShape/)
+
 ## 快速开始
 
 ```bash

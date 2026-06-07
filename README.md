@@ -16,6 +16,8 @@ Built for a computer graphics course project. Purely coded by DeepSeek-V4-Pro. I
 - **Landmarks Overlay** — MediaPipe 478 face landmarks drawn on the webcam preview.
 - **Model Import** — Switch `.vrm` models at runtime.
 
+**Live Demo**: [coast23.github.io/CG-BlendShape](https://coast23.github.io/CG-BlendShape/)
+
 ## Quick Start
 
 ```bash
