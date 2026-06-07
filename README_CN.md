@@ -1,5 +1,7 @@
 # CG-BlendShape
 
+[English](README.md)
+
 基于 Web 的 VRM 人脸动画系统，支持实时 blendshape 控制、摄像头面捕、以及"2D 布料"的布料物理 2D 投影模式。
 
 这是本人的计算机图形学课程大作业项目，代码完全由 DeepSeek-V4-Pro 生成，因此难免会有 bugs。Anyway，it works on my machine，这就足够了。

@@ -1,5 +1,7 @@
 # CG-BlendShape
 
+[中文版](README_CN.md)
+
 A web-based VRM face animation system with real-time blendshape control, webcam face tracking, and a cloth-physics "2D foil" visualization mode.
 
 Built for a computer graphics course project. Purely coded by DeepSeek-V4-Pro. It's completely normal if there are bugs. Anyway, it works on my machine, which is good enough for me.
