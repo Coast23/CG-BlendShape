@@ -551,7 +551,7 @@ const clothSun2 = new THREE.DirectionalLight(0xffffff, 0.5);
 clothSun2.position.set(-10, 50, -10); clothScene.add(clothSun2);
 
 // Foil texture — used as VRM scene background so it composites into the RT
-const foilTex = new THREE.TextureLoader().load('/assets/foil.png');
+const foilTex = new THREE.TextureLoader().load(import.meta.env.BASE_URL + 'assets/foil.png');
 foilTex.colorSpace = THREE.SRGBColorSpace;
 
 // Cloth geometry — built dynamically in initCloth() based on canvas size
@@ -801,7 +801,7 @@ fileInput.addEventListener('change', async () => {
 
 // ── Boot ────────────────────────────────────────────────────────────────────
 (async () => {
-  try { await loadVRM('/AvatarSample_A.vrm'); } catch (err) {
+  try { await loadVRM(import.meta.env.BASE_URL + 'AvatarSample_A.vrm'); } catch (err) {
     console.error('Startup:', err);
     loadingText.textContent = 'Failed: ' + err.message;
     loadingText.style.color = '#f87171';
