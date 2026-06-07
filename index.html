@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CG-BlendShape</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="loading-overlay">
+    <div class="loading-spinner"></div>
+    <div class="loading-bar-container"><div id="loading-progress"></div></div>
+    <p id="loading-text">Loading model...</p>
+  </div>
+
+  <div id="app">
+    <div id="canvas-panel">
+      <div id="canvas3d"></div>
+      <div id="canvas-hint">Drag to rotate &middot; Scroll to zoom</div>
+    </div>
+
+    <div id="control-panel">
+      <header id="panel-header">
+        <h1>Expressions</h1>
+        <div id="header-buttons">
+          <label id="import-label" for="file-input" title="Load .vrm file">Import</label>
+          <input type="file" id="file-input" accept=".vrm" hidden />
+          <div id="mode-toggle">
+            <button id="mode-3d-btn" class="active">3D</button>
+            <button id="mode-2d-btn">2D</button>
+          </div>
+          <button id="reset-btn">Reset</button>
+        </div>
+      </header>
+
+      <section id="sliders-section">
+        <h2 class="section-title">Blend Weights</h2>
+        <div id="sliders-container"></div>
+      </section>
+
+      <section id="webcam-section">
+        <h2 class="section-title">Camera Tracking</h2>
+        <div id="webcam-buttons">
+          <button id="webcam-btn">Enable</button>
+          <button id="landmarks-btn" disabled>Dots</button>
+        </div>
+        <p id="webcam-status">Idle</p>
+        <div id="webcam-wrapper">
+          <video id="webcam-video" playsinline></video>
+          <canvas id="landmarks-canvas"></canvas>
+        </div>
+      </section>
+
+      <section id="cloth-section" style="display:none">
+        <h2 class="section-title">Cloth Controls</h2>
+        <div id="cloth-controls">
+          <div class="cloth-row"><label>Wind</label><input type="range" id="cloth-wind" min="0" max="100" value="60" /></div>
+          <div class="cloth-row"><label>Orbit</label><input type="range" id="cloth-orbit" min="0" max="100" value="15" /></div>
+          <div class="cloth-row buttons">
+            <button id="cloth-wire-btn" class="active">Wire</button>
+            <button id="cloth-freecam-btn">Free Cam</button>
+            <button id="cloth-reset-btn">Reset</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

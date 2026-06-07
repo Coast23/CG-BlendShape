@@ -1,0 +1,19 @@
+{
+  "name": "cg-blendshape",
+  "version": "1.0.0",
+  "description": "计算机图形学大作业 - Blendshape 人脸动画系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.18",
+    "@pixiv/three-vrm": "^3.1.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
